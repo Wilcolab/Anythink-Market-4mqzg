@@ -27,7 +27,7 @@ var UserSchema = new mongoose.Schema(
     role: {
       type: String,
       enum: ["user", "admin"],
-      default: "user"
+      default: "admin"
     },
     favorites: [{ type: mongoose.Schema.Types.ObjectId, ref: "Item" }],
     following: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
